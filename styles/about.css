@@ -1,0 +1,130 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* fonts */
+
+@font-face {
+  font-family: 'italic';
+  src: url('../fonts/Poppins-BlackItalic.ttf');
+}
+@font-face {
+  font-family: 'medium';
+  src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'semiBold';
+  src: url('../fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'thin';
+  src: url('../fonts/Poppins-Thin.ttf');
+}
+
+/* roots */
+
+:root{
+  --colorParagraphs: rgb(254, 254, 254);
+  --colorTitles: rgb(155, 54, 47);
+  --fontSizeParagraphs: 20px;
+  --fontSizeQuotes: 35px;
+  --bckground: rgba(180, 166, 166, 0.474);
+  --bckgroundGrid: rgb(243, 237, 227);
+}
+
+/* About Us section */
+#aboutUs {
+  background-image: url("../img/slider1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+#aboutUs h2 {
+  padding-top: 50px;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'medium';
+  text-transform: uppercase;
+
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444343;
+  font-family: 'medium';
+  border-top: 2px solid slategrey;
+  padding: 19px;
+  border-radius: 30px; 
+  background-color: #ccc2c49f;
+
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #272222; 
+  color: #fff;
+  font-family: 'semibold';
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.hidden {
+  display: none;
+}
+
+
+.mapContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.map {
+  width: 100%;
+  height: 300px; 
+  border-radius: 20px; 
+}
+
+#footer {
+  background-color: #fff4fa;
+  z-index: 100;
+}
+
+/* Responsive  */
+@media (max-width: 744px) and (min-width: 562px)  {
+  .map {
+    height: 200px;
+  }
+}
+
+@media (max-width: 561px) and (min-width: 320px) {
+  .map {
+    height: 150px; 
+  }
+}

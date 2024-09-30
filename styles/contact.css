@@ -1,0 +1,173 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+:root{
+  --colorParagraphs: rgb(254, 254, 254);
+  --colorTitles: rgb(155, 54, 47);
+  --fontSizeParagraphs: 20px;
+  --fontSizeQuotes: 35px;
+  --bckground: rgba(180, 166, 166, 0.474);
+  --bckgroundGrid: rgb(243, 237, 227);
+}
+
+
+#section2 h3 {
+  margin: 40px;
+  padding: 50px;
+  margin-left: 10%;
+  font-size: 50px;
+  font-family: 'Lora';
+  border-bottom: 3px solid slategrey;
+  border-left: 3px solid slategrey;
+  border-radius: 100px;
+  opacity: 0.8;
+  color: #343434;
+}
+
+.subscribe-container {
+  background-image: url("../IMG/subscription-bg.jpg");
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.subscribe-container h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Lora';
+  margin-bottom: 50px;
+  background-color: white;
+  border-bottom: 3px solid slategrey;
+  border-left: 3px solid slategrey;
+  padding: 20px;
+  border-radius: 200px;
+  color: #343434;
+}
+
+.form-wrapper{
+  text-align: center;   
+
+}
+.input-element {
+  max-width: 700px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px;
+  border: 3px solid slategray;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.input-element::-webkit-input-placeholder {
+  color: #999;
+}
+
+.input-element::-moz-placeholder {
+  color: #999;
+}
+
+.input-element:-ms-input-placeholder {
+  color: #999;
+}
+
+.input-element::-ms-input-placeholder {
+  color: #999;
+}
+
+.input-element::placeholder {
+  color: #999;
+}
+
+.form-btn {
+  outline: none;
+  background-color: darkgrey;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.form-btn:hover {
+  background-color:cadetblue;
+
+}
+.input-element:focus {
+  outline: none;
+  border-color: #2684ff;
+  -webkit-box-shadow: 0 0 5px rgba(38, 132, 255, 0.5), rgba(38, 132, 255, 0.5);
+          box-shadow: 0 0 5px rgba(38, 132, 255, 0.5), rgba(38, 132, 255, 0.5);
+}
+
+/* responsive */
+
+@media (max-width: 1201px)  {
+
+  /* sunscribe section */
+  #section2 h3 {
+     font-size: 30px;
+  }
+  .subscribe-container h2 {
+     font-size: 35px;
+  }
+
+}
+
+/* max-width: 1024px*/
+@media (max-width: 1024px) and (min-width: 745px) {
+  #section2 h3 {
+     font-size: 28px;
+  }
+  .subscribe-container h2 {
+     font-size: 32px;
+  }
+
+}
+
+@media (max-width: 744px) and (min-width: 562px)  {
+  .input-element {
+    max-width: 400px;
+    width: 100%;
+ }
+
+  #section2 h3 {
+    font-size: 25px;
+ }
+ .subscribe-container h2 {
+    font-size: 30px;
+ }
+}
+
+
+@media (max-width: 561px) and (min-width: 320px) {
+  .input-element {
+    max-width: 300px;
+    width: 100%;
+    margin: 5px;
+
+ }
+  .subscribe-container h2 {
+     font-size: 28px;
+  }
+
+ }      

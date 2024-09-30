@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'italic';
+  src: url('../fonts/Poppins-BlackItalic.ttf');
+}
+@font-face {
+  font-family: 'medium';
+  src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'semiBold';
+  src: url('../fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'thin';
+  src: url('../fonts/Poppins-Thin.ttf');
+}
+
+:root {
+  --colorParagraphs: rgb(254, 254, 254);
+  --colorTitles: rgb(155, 54, 47);
+  --fontSizeParagraphs: 20px;
+  --fontSizeQuotes: 35px;
+  --bckground: rgba(180, 166, 166, 0.474);
+  --bckgroundGrid: rgb(243, 237, 227);
+}
+
+#footer {
+  background-color: #fff4fa;
+  padding-bottom: 0;
+  opacity: 80%;
+}
+
+.copyright {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.theme-page {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1110px;
+  width: 90%;
+  border-top: 2px solid slategrey;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.theme-page h2 {
+  font-family: 'italic';
+  font-size: 30px;
+  color: #38383d;
+  padding: 10px;
+  border-top: 2px solid slategrey;
+  border-radius: 30px;
+}
+
+.theme-page p {
+  font-size: 16px;
+  color: #666;
+}
+
+.theme-page img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  border-top: 2px solid slategrey;
+  border-radius: 30px;
+}
+
+.theme-page:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.theme-page img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) and (min-width: 745px) {
+  .theme-page {
+    max-width: 700px;
+    padding: 20px;
+  }
+
+  .theme-page img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 744px) and (min-width: 562px) {
+  .theme-page {
+    max-width: 500px;
+    padding: 15px;
+  }
+
+  .theme-page img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 561px) {
+  .theme-page {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .theme-page img {
+    max-width: 200px;
+  }
+
+  .theme-page h2 {
+    font-size: 24px;
+  }
+
+  .theme-page p {
+    font-size: 14px;
+  }
+}

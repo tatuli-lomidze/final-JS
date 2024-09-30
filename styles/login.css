@@ -1,0 +1,111 @@
+#footer {
+  background-color: white;
+  opacity: 85%;
+}
+
+h1 {
+  padding-top: 50px;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'medium';
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'italic';
+  font-size: 30px;
+  color: #38383d;
+  padding: 10px;
+  border-top: 2px solid slategrey;
+  border-radius: 30px;
+}
+
+main {
+  opacity: 80%;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin-left: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+button {
+  outline: none;
+  background-color: darkgrey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: cadetblue;
+}
+
+label {
+  margin: 10px 0;
+  margin-left: 10px;
+}
+
+@media (max-width: 1024px) and (min-width: 745px) {
+  .form-wrapper {
+    max-width: 500px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 744px) and (min-width: 562px) {
+  .form-wrapper {
+    max-width: 400px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 561px) {
+  .form-wrapper {
+    max-width: 300px;
+    margin-left: 5px;
+  }
+
+  h1 {
+    font-size: 28px;
+    padding-top: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}

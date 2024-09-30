@@ -1,0 +1,159 @@
+#result  {
+  padding-top: 50px;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'medium';
+  text-transform: uppercase;
+}
+
+#welcomeMessage {
+  font-family: 'italic';
+  font-size: 30px;
+  color: #38383d;
+  padding: 10px;
+  border-top: 2px solid slategrey;
+  border-radius: 30px; 
+}
+
+.journeys-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 150px;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    margin: 50px auto;
+  }
+  
+  .journeys-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .journeys-slideshow {
+    position: relative;
+    max-width: 360px;
+    width: 360px;
+    max-height: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .journeys-slideshow img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
+  }
+  
+  
+  .journeys-slideshow img.active {
+    opacity: 1;
+  }
+  
+  .journeys-container.left h2 {
+    font-size: 40px;
+    font-family: 'Lora';
+    max-width: 360px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px slategrey;
+    text-transform: uppercase;
+    margin-left: 10px;
+
+    
+  }
+  
+  .journeys-text-wrapper {
+    max-width: 360px;
+    width: 100%;
+   font-size: 25px;
+   font-family: 'Cabin';
+   border-radius: 30px;
+   padding: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   cursor: pointer;
+   background-color: white;
+   border-bottom: 3px solid slategrey;
+   border-left: 1px solid slategrey;
+   -webkit-box-shadow: 1px 1px 10px slategray;
+           box-shadow: 1px 1px 10px slategray;
+   color: slategrey;
+   -webkit-transition: width 0.3s ease;
+   -o-transition: width 0.3s ease;
+   transition: width 0.3s ease;
+  }
+  
+  .journeys-text-wrapper h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lora';
+  }
+
+  .journeys-text-wrapper.active {
+background-color: aqua;
+  }
+  
+  .journey-button {
+    max-width: 300px;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    background-color: darkgrey;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Lora';
+    
+  }
+
+  
+.journey-button:hover {
+  background-color: black;
+}
+
+.journeys-text-wrapper:hover {
+  width: 320px;
+}
+
