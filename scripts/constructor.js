@@ -28,7 +28,7 @@ class ThemePage {
       super.render(
         'Beach Paradise',
         'Explore the breathtaking beaches of the French Riviera.',
-        `../img/constructor-beach.jpg`
+        `./img/constructor-beach.jpg`
       );
     }
   }
@@ -42,7 +42,7 @@ class ThemePage {
       super.render(
         'Historic Charm',
         'Discover the rich history and cultural heritage of the region.',
-        `../img/constructor-historic.jpg`
+        `./img/constructor-historic.jpg`
       );
     }
   }
@@ -56,7 +56,7 @@ class ThemePage {
       super.render(
         'Adventure Awaits',
         'Embark on thrilling adventures in the stunning landscapes.',
-        `../img/constructor1.jpg`
+        `./img/constructor1.jpg`
       );
     }
   }
